@@ -5,6 +5,7 @@ use common\models\User;
 use yii\base\Model;
 use Yii;
 
+
 /**
  * Signup form
  */
@@ -13,6 +14,7 @@ class SignupForm extends Model
     public $username;
     public $email;
     public $password;
+    public $repassword;
 
     /**
      * @inheritdoc
@@ -21,7 +23,7 @@ class SignupForm extends Model
     {
         return [
             ['username', 'filter', 'filter' => 'trim'],
-            ['username', 'required'],
+            [['username', 'password'], 'required'],
             ['username', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This username has already been taken.'],
             ['username', 'string', 'min' => 2, 'max' => 255],
 
@@ -33,6 +35,7 @@ class SignupForm extends Model
 
             ['password', 'required'],
             ['password', 'string', 'min' => 6],
+            ['repassword', 'compare', 'compareAttribute'=>'password'],
         ];
     }
 
@@ -55,5 +58,11 @@ class SignupForm extends Model
         }
 
         return null;
+    }
+
+    public function scenarios(){
+      /*  $scenarios = parent::scenarios();
+        $scenarios['short_register'] = ['username','email'];
+        return $scenarios;*/
     }
 }

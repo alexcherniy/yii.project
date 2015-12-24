@@ -18,9 +18,15 @@
             <div class="col-lg-3 col-sm-3">
                 <h4>Newsletter</h4>
                 <p>Get notified about the latest properties in our marketplace.</p>
-                <form class="form-inline" role="form">
-                    <input type="text" placeholder="Enter Your email address" class="form-control">
-                    <button class="btn btn-success" type="button">Notify Me!</button></form>
+
+                <? echo \yii\helpers\Html::beginForm('','post',['class'=>'form-inline'])?>
+
+                <? echo \yii\helpers\Html::textInput('','',['class'=>'form-control', 'placeholder'=>'Введите свой email'])?>
+
+
+                        <?=\yii\helpers\Html::submitButton('Оповестить меня!',['class' => 'btn btn-success']) ?>
+
+                <? echo \yii\helpers\Html::endForm()?>
             </div>
 
             <div class="col-lg-3 col-sm-3">

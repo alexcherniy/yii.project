@@ -11,7 +11,7 @@ return [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'controllerNamespace' => 'frontend\controllers',
-
+    'defaultRoute'=> 'main',
     'modules' => [
     'main' => [
         'class' => 'app\modules\main\module',
@@ -25,15 +25,19 @@ return [
             'useFileTransport' => false,
             'config'           => [
                 'mailer'     => 'smtp',
-                'host'       => 'smtp.yandex.ru',
+                'host'       => 'smtp.mail.ru',
                 'port'       => '465',
                 'smtpsecure' => 'ssl',
                 'smtpauth'   => true,
-                'username'   => '',
-                'password'   => '',
+                'username'   => 'sgsani',
+                'password'   => 's04535893',
+                'charset'    => 'UTF-8',
             ],
         ],
 
+        'common' => [
+            'class' => 'frontend\component\Common'
+        ],
 
         'user' => [
             'identityClass' => 'common\models\User',
