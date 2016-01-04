@@ -20,11 +20,11 @@
             <!-- Nav Starts -->
             <div class="navbar-collapse  collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html" >Home</a></li>
-                    <li><a href="about.html" >About</a></li>
-                    <li><a href="agents.html" >Agents</a></li>
-                    <li><a href="blog.html" >Blog</a></li>
-                    <li><a href="contact.html" >Contact</a></li>
+                    <li class="active"><a href="index.html" >Главная</a></li>
+                    <li><a href="about.html" >О нас</a></li>
+                    <li><a href="agents.html" >Агенты</a></li>
+                    <li><a href="blog.html" >Блог</a></li>
+                    <li><a href="contact.html" >Контакты</a></li>
                 </ul>
             </div>
             <!-- #Nav Ends -->
@@ -46,9 +46,9 @@
         <a href="index.html" ><img src="/images/logo.png"  alt="Realestate"></a>
 
         <ul class="pull-right">
-            <li><a href="buysalerent.html" >Buy</a></li>
-            <li><a href="buysalerent.html" >Sale</a></li>
-            <li><a href="buysalerent.html" >Rent</a></li>
+            <li><a href="buysalerent.html" >Покупка</a></li>
+            <li><a href="buysalerent.html" >Продажа</a></li>
+            <li><a href="buysalerent.html" >Аренда</a></li>
         </ul>
     </div>
     <!-- #Header Starts -->

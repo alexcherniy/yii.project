@@ -84,7 +84,7 @@
 <div class="banner-search">
     <div class="container">
         <!-- banner -->
-        <h3>Buy, Sale & Rent</h3>
+        <h3>Покупка, продажа, аренда</h3>
         <div class="searchbar">
             <div class="row">
                 <? echo \yii\helpers\Html::beginForm()?>
